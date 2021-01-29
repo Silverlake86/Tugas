@@ -14,9 +14,9 @@ for line in sys.stdin:
         else:
             special = special + 1
 
-sys.stdout.write("Total angka: " + str(digits))
+sys.stdout.write("Jumlah Angka: " + str(digits))
 sys.stdout.write('\n')
-sys.stdout.write("Total huruf: " + str(alphabets))
+sys.stdout.write("Jumlah Huruf: " + str(alphabets))
 sys.stdout.write('\n')
-sys.stdout.write("Total symbol: " + str(special))
+sys.stdout.write("Jumlah Simbol: " + str(special))
 sys.stdout.write('\n')
