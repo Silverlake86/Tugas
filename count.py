@@ -1,22 +1,25 @@
 import sys
 
 
-str1 = "test"
-alphabets = digits = special = 0
+string = " "
+alphabets = 0
+digits = 0
+specials = 0
 
 for line in sys.stdin:
-    str1 = line
-    for i in range(len(str1)):
-        if((str1[i] >= 'a' and str1[i] <= 'z') or (str1[i] >= 'A' and str1[i] <= 'Z')): 
+    string = line
+    for i in range(len(string)):
+        if((string[i] >= 'a' and string[i] <= 'z') or (string[i] >= 'A' and string[i] <= 'Z')): 
             alphabets = alphabets + 1 
-        elif(str1[i] >= '0' and str1[i] <= '9'):
+        elif(string[i] >= '0' and string[i] <= '9'):
             digits = digits + 1
         else:
-            special = special + 1
+            specials = specials + 1
 
 sys.stdout.write("Jumlah Angka: " + str(digits))
 sys.stdout.write('\n')
 sys.stdout.write("Jumlah Huruf: " + str(alphabets))
 sys.stdout.write('\n')
-sys.stdout.write("Jumlah Simbol: " + str(special))
+sys.stdout.write("Jumlah Simbol: " + str(specials))
 sys.stdout.write('\n')
+
